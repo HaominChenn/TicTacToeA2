@@ -26,7 +26,7 @@ var gameOver = false;
 function resetGame() {
 
     // TODO: document this code from class
-    // The for loop sets all 9 cells' content to nothing
+    //Sets all 9 cells' content to nothing
     for (i = 0; i < board.length; i++) {
         board[i].innerHTML = "";
     }
