@@ -57,13 +57,21 @@ function cellClicked(cell) {
 
     //TODO: 1-5 should occur only when the selected cell is empty and the game is 
     // still in progress!
+    //Set the conditions for game playing when the selected cell is empty and game
+    //is in progress
     if (!gameOver && empty > 0)
         // TODO: decrease # of empty cells by 1
+        //Decrease the empty cells by 1 when user click the one of the nine cells
+        //of the board
         empty--;
     // TODO: document this code from class
+    //Set the content of the choosen cell of the current player
     cell.innerHTML = player;
+    //Invoke function checkWin() to check if there is a winner
     checkWin();
+    //Switch the current player 
     player = (player === "X") ? "O" : "X";
+    //Update the information on the page of the current player
     document.getElementById("player").innerHTML = player;
 }
 
