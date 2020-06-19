@@ -35,6 +35,8 @@ function resetGame() {
     player = "X";
 
     // TODO reset gameOver and # of empty cells
+    gameOver = false;
+    empty = 9;
 }
 
 /* Function cellClicked() is called
