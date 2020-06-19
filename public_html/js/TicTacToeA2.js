@@ -32,9 +32,9 @@ function resetGame() {
     }
 
     // TODO reset player back to X and update it on the page
-    //Reset player back to X
+    //Reset player back to X which is always the starting player
     player = "X";
-    //Update the play "X" on the page
+    //Update the play "X" on the page which shows the current player
     document.getElementById("player").innerHTML = player;
 
     // TODO reset gameOver and # of empty cells
