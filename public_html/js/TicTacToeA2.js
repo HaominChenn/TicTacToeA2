@@ -35,7 +35,9 @@ function resetGame() {
     player = "X";
 
     // TODO reset gameOver and # of empty cells
+    //Set the game status back to in progress-false means in progress
     gameOver = false;
+    //Set the number of the empty cells back to 9, start keep track again
     empty = 9;
 }
 
